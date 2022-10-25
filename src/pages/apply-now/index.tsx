@@ -92,7 +92,7 @@ const Apply: NextPage = () => {
               }}
               validationSchema={activeStepValidation}
             >
-              {({ errors, isValid, touched, isSubmitting, dirty }) => (
+              {({ isSubmitting }) => (
                 <Form id="apply-form" className="form">
                   {renderStepContent(activeStep)}
 

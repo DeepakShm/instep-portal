@@ -1,6 +1,4 @@
-import { ChangeEvent } from "react"
 import InputField from "../../../common/components/InputField"
-import Apply_Form_Model from "../ApplyForm.model"
 
 const Personal = () => {
     return (

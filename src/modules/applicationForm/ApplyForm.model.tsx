@@ -68,31 +68,31 @@ const INTEREST_MODEL = {
         requiredErrorMsg:"Skills are required"
     }
 }
-const Apply_Form_Model = {
-    formId: "formId",
-    formFileds:{
-      address: {
-          name: "address",
-          label: "Address*",
-          requiredErrorMsg: "Address is required",
-      },
-      city: {
-          name: "city",
-          label: "City*",
-          requiredErrorMsg: "City is required",
-      },
-      state: {
-          name: "state",
-          label: "State*",
-          requiredErrorMsg: "State is required",
-      },
-      zip: {
-          name: "zip",
-          label: "Zip*",
-          requiredErrorMsg: "Zip is required",
-      },
-    },
-  };
+// const Apply_Form_Model = {
+//     formId: "formId",
+//     formFileds:{
+//       address: {
+//           name: "address",
+//           label: "Address*",
+//           requiredErrorMsg: "Address is required",
+//       },
+//       city: {
+//           name: "city",
+//           label: "City*",
+//           requiredErrorMsg: "City is required",
+//       },
+//       state: {
+//           name: "state",
+//           label: "State*",
+//           requiredErrorMsg: "State is required",
+//       },
+//       zip: {
+//           name: "zip",
+//           label: "Zip*",
+//           requiredErrorMsg: "Zip is required",
+//       },
+//     },
+//   };
   
-export default Apply_Form_Model;
+export {EDUCATION_MODEL,INTEREST_MODEL,PERSONAL_INFO_MODEL};
   

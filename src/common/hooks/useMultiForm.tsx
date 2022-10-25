@@ -26,7 +26,7 @@ export default function useMultiForm(steps: string[]) {
     console.log(query);
 
     // we can add the conditional fetch for resume option. useSWR()
-    const [details, setDetails] = useState<ApplyFormDetails>(INITIAL_APPLY_FORM_VALUES);
+    const [details,_] = useState<ApplyFormDetails>(INITIAL_APPLY_FORM_VALUES);
 
     // can set the initial value for resume feature. init with '0'
     const [activeStep, setActiveStep] = useState(0);

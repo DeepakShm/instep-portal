@@ -1,77 +1,77 @@
-.stepper{
-    .steps{
-        .step{
-            flex-grow: 1;
-            position: relative;
-            &:not(:last-child)::after{
-                content: "";
-                position: absolute;
-                height: 2px;
-                background-color: #ddd;
-                top: calc(50% - 12px);
-                width: 100%;
-                left: calc(50%);
-                transform-origin: right;
-                z-index: 1;
-            }
-            .step-number{
-                position: relative;
-                z-index: 2;
-                font-size: 20px;
-                width: 50px;
-                aspect-ratio: 1;
-                display: grid;
-                place-content: center;
-                background: #ddd;
-                font-weight: 500;
-                border-radius: 100%;
-            }
-            .step-text{
-                text-transform: capitalize;
-                font-size: 15px;
-            }
-        }
-        .done-step{
-            .step-number{
-                background-color: black;
-                color: white;
-            }
-        }
-        .active-step{
-            .step-number{
-                border: 1px solid black;
-            }
-        }
+.stepper {
+  .steps {
+    .step {
+      flex-grow: 1;
+      position: relative;
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: #ddd;
+        top: calc(50% - 12px);
+        width: 100%;
+        left: calc(50%);
+        transform-origin: right;
+        z-index: 1;
+      }
+      .step-number {
+        position: relative;
+        z-index: 2;
+        font-size: 20px;
+        width: 50px;
+        aspect-ratio: 1;
+        display: grid;
+        place-content: center;
+        background: #ddd;
+        font-weight: 500;
+        border-radius: 100%;
+      }
+      .step-text {
+        text-transform: capitalize;
+        font-size: 15px;
+      }
     }
+    .done-step {
+      .step-number {
+        background-color: black;
+        color: white;
+      }
+    }
+    .active-step {
+      .step-number {
+        border: 1px solid black;
+      }
+    }
+  }
 }
 
-.form{
-    .input-group{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        position: relative;
-        padding-bottom: 24px;
-        label{
-            font-size: medium;
-            text-transform: capitalize;
-            font-size: 14px;
-        }
-        
-        //TODO: need to change the type in every input, input[type='text']{
-        input{
-            font-size: 16px;
-            padding: 0px s0px 5px 10px;
-            outline: none;
-            border-bottom-width: 1px;
-            border-bottom-color: black;
-            // rounded py-3 px-4 mb-3 text-input w-full bg-grey-lighter text-grey-darker border 
-        }
-        .error-msg{
-            position: absolute;
-            bottom: 0px;
-            font-size: 12px;
-        }
+.form {
+  .input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    padding-bottom: 24px;
+    label {
+      font-size: medium;
+      text-transform: capitalize;
+      font-size: 14px;
     }
+
+    //TODO: need to change the type in every input, input[type='text']{
+    input {
+      font-size: 16px;
+      padding: 0px s0px 5px 10px;
+      outline: none;
+      border-bottom-width: 1px;
+      border-bottom-color: black;
+      // rounded py-3 px-4 mb-3 text-input w-full bg-grey-lighter text-grey-darker border
+    }
+    .error-msg {
+      position: absolute;
+      bottom: 0px;
+      font-size: 12px;
+    }
+  }
 }

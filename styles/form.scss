@@ -62,7 +62,6 @@
     //TODO: need to change the type in every input, input[type='text']{
     input {
       font-size: 16px;
-      padding: 0px s0px 5px 10px;
       outline: none;
       border-bottom-width: 1px;
       border-bottom-color: black;
@@ -70,7 +69,7 @@
     }
     .error-msg {
       position: absolute;
-      bottom: 0px;
+      bottom: 5px;
       font-size: 12px;
     }
   }

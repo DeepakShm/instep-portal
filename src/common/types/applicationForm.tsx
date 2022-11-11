@@ -1,14 +1,17 @@
 export interface ApplyFormDetails {
-  firstName: string;
-  lastName: string;
+  firstname: string;
+  lastname: string;
   email: string;
   phone: string;
   address: string;
   state: string;
-  dob: Date | undefined;
+  dob: Date | string;
   city: string;
   zip: string;
-  cgpa: number;
+  gpa: number;
   universityLocation: string;
   universityName: string;
+  nextStep:number | null;
+  prevStep:number | null;
+  currStep:number | null;
 }

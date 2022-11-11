@@ -5,8 +5,8 @@ const Personal = () => {
     <div>
       <div className="flex flex-col gap-2">
         <div className="flex flex-row gap-8">
-          <InputField name="firstName" label="firstname" type="text" />
-          <InputField name="lastName" label="lastname" />
+          <InputField name="firstname" label="firstname" type="text" />
+          <InputField name="lastname" label="lastname" />
         </div>
         <div className="flex flex-row gap-8">
           <InputField name="email" label="email" />

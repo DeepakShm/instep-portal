@@ -8,7 +8,7 @@ const Education = () => {
         <InputField name="universityName" label="University Name" />
       </div>
       <div>
-        <InputField name="cgpa" label="CGPA" />
+        <InputField name="gpa" type="number" label="GPA" />
       </div>
     </>
   );
